@@ -9,9 +9,9 @@ function styles () {
 }
 
 function images () {
-    return gulp.src('./src/images/**/*')
+    return gulp.src('./src/imagens/**/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'));
+        .pipe(gulp.dest('./dist/imagens'));
 }
 
 exports.default = gulp.parallel(styles, images);
